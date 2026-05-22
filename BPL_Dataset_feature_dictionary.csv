@@ -1,0 +1,12 @@
+feature,description,unit_or_format,value_type,Comments
+Timestamp,Wall-clock timestamp of the sample after initial trimming to the first usable movement record,datetime string (YYYY-MM-DD HH:MM:SS.sss),datetime,Used as the time reference for the trace rows
+CI,Anonymized cell identifier used to distinguish railway cells,3-character code like 001/string,categorical string,
+V_TRAIN (Km/h),Train speed at the sample,km/h,numeric,Missing values may exist where the source trace did not provide speed
+NID_BG,Anonymized balise group identifier,integer,categorical integer,Stable anonymized mapping of the original NID_BG value
+M_MODE,Train supervision / operating mode label,text,categorical string,Observed values in current dataset include Full Supervision and STM National
+DL Rxqual,Downlink received signal quality indicator,Rxqual level (dimensionless ordinal),numeric ordinal,Quality-style telecom indicator from the trace source
+UL Rxqual,Uplink received signal quality indicator,Rxqual level (dimensionless ordinal),numeric ordinal,Quality-style telecom indicator from the trace source
+D_LRBG,Distance to the last relevant balise group,meters,numeric,No forward fill is applied in the current anonymization pipeline
+HO_state,Derived handover state removed message control,code 0/1/2/3,integer categorical,"0=none,  1 = HO command,  2 HO detect,  3= HO complete/performed "
+CES,Conditional Emergency Stop status derived from tooltip events,flag 0/1,binary,
+EStop,Emergency Stop status derived from tooltip events,flag 0/1,integer binary,

@@ -90,6 +90,12 @@ The IEEE DataPort record highlights the following application areas:
 - anomaly detection
 - reliability assessment
 - AI/ML-based optimization for future railway communication systems
+## Notes for Users
+
+- This is a raw dataset release.
+- Missing values are intentionally preserved.
+- Users can apply their own cleaning, interpolation, feature engineering, and modeling pipelines depending on the target task.
+- The feature dictionary file provides the recommended interpretation of each published field.
 
 ## Visuals
 
@@ -101,12 +107,7 @@ The IEEE DataPort record highlights the following application areas:
 
 ![Dataset visualization dashboard](Data_Visualization_dashboard.png)
 
-## Notes for Users
 
-- This is a raw dataset release.
-- Missing values are intentionally preserved.
-- Users can apply their own cleaning, interpolation, feature engineering, and modeling pipelines depending on the target task.
-- The feature dictionary file provides the recommended interpretation of each published field.
 
 ## Citation
 
